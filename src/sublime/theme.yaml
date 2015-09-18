@@ -1,0 +1,55 @@
+# [PackageDev] target_format: plist, ext: tmTheme
+
+name: Adblock Plus Filter List
+uuid: f60e438f-bffb-4d65-8f6c-9406323a2eb0
+
+settings:
+  - settings:
+      lineHighlight: '#000A'
+  
+  - scope: meta.abp.header
+    settings:
+      fontStyle: bold
+      foreground: '#888'
+  - scope: abp.comment
+    settings:
+      foreground: '#888'
+  - scope: abp.comment.value
+    settings:
+      foreground: '#555'
+  
+  - scope: abp.options
+    settings:
+      foreground: '#77F'
+  - scope: abp.separator
+    settings:
+      foreground: '#777'
+  - scope: abp.selector
+    settings:
+      foreground: '#FF5'
+  
+  - scope: abp.options.elemhide
+    settings:
+      foreground: '#99F'
+  - scope: abp.separator.elemhide
+    settings:
+      foreground: '#999'
+  - scope: abp.selector.elemhide
+    settings:
+      foreground: '#F99'
+  - scope: abp.selector.elemhide.exception
+    settings:
+      foreground: '#9F9'
+  
+  - scope: abp.options.blocking
+    settings:
+      foreground: '#55F'
+  - scope: abp.separator.blocking
+    settings:
+      foreground: '#555'
+  - scope: abp.selector.blocking
+    settings:
+      foreground: '#F55'
+  - scope: abp.selector.blocking.exception
+    settings:
+      foreground: '#5F5'

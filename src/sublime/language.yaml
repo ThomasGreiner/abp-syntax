@@ -1,0 +1,52 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+
+name: Adblock Plus Filter List
+scopeName: text.abp
+fileTypes: [abp, txt]
+uuid: 93af9947-d7f6-437c-9ffb-dd8c27d2ede8
+
+patterns:
+  - name: meta.abp.header
+    comment: Header
+    match: '^\s*\[.*\]\s*$'
+  
+  - name: abp.comment
+    comment: Comment
+    begin: '^\s*\!\s*([^\s:]*)(\s*:\s*(.*))?'
+    beginCaptures:
+      '1': {name: abp.comment.key}
+      '3': {name: abp.comment.value}
+    end: \s*$
+  
+  - name: abp.elemhide.exception
+    begin: '^(.*)(#@#)(.*)'
+    beginCaptures:
+      '1': {name: abp.options.elemhide.exception}
+      '2': {name: abp.separator.elemhide.exception}
+      '3': {name: abp.selector.elemhide.exception}
+    end: \s*$
+  
+  - name: abp.elemhide.default
+    begin: '^(.*)(##)(.*)'
+    beginCaptures:
+      '1': {name: abp.options.elemhide.default}
+      '2': {name: abp.separator.elemhide.default}
+      '3': {name: abp.selector.elemhide.default}
+    end: \s*$
+  
+  - name: abp.blocking.exception
+    begin: '^(@@)([^\$]*)((\$)(.*))?'
+    beginCaptures:
+      '1': {name: abp.separator.blocking.exception}
+      '2': {name: abp.selector.blocking.exception}
+      '4': {name: abp.separator.blocking.exception}
+      '5': {name: abp.options.blocking.exception}
+    end: \s*$
+  
+  - name: abp.blocking.default
+    begin: '^([^\$]+)((\$)(.*))?'
+    beginCaptures:
+      '1': {name: abp.selector.blocking.default}
+      '3': {name: abp.separator.blocking.default}
+      '4': {name: abp.options.blocking.default}
+    end: \s*$

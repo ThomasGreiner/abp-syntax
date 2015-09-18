@@ -1,0 +1,16 @@
+[Adblock Plus 2.0]
+! Title: Example filter list
+! Expires: 4 days
+
+! Blocking filters
+||example.com^
+||www.example.com^$third-party
+@@/^https?:\/\/\d+\.example\.com\//
+@@||www.example.com^$document
+
+! Hiding filters
+##body
+example.com,~www2.example.com##body
+#@#body
+www.example.com#@#body
+
