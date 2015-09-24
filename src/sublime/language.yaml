@@ -3,6 +3,7 @@
 name: Adblock Plus Filter List
 scopeName: text.abp
 uuid: 93af9947-d7f6-437c-9ffb-dd8c27d2ede8
+firstLineMatch: '^(?i:\s*\[\s*(?:adblock\s*(plus\s*(\d+(\.\d+)*\s*)?)?)\]\s*)$'
 
 patterns:
   - name: meta.abp.header
