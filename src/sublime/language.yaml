@@ -2,7 +2,6 @@
 
 name: Adblock Plus Filter List
 scopeName: text.abp
-fileTypes: [abp, txt]
 uuid: 93af9947-d7f6-437c-9ffb-dd8c27d2ede8
 
 patterns:
