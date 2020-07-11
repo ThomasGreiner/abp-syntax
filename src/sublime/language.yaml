@@ -44,7 +44,7 @@ patterns:
     end: \s*$
   
   - name: abp.blocking.default
-    begin: '^([^\$]+)((\$)(.*))?'
+    begin: '^([^\$]*)((\$)(.*))?'
     beginCaptures:
       '1': {name: abp.selector.blocking.default}
       '3': {name: abp.separator.blocking.default}

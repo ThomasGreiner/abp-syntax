@@ -4,6 +4,7 @@
 
 ! Blocking filters
 ||example.com^
+$third-party
 ||www.example.com^$third-party
 @@/^https?:\/\/\d+\.example\.com\//
 @@||www.example.com^$document
@@ -13,4 +14,3 @@
 example.com,~www2.example.com##body
 #@#body
 www.example.com#@#body
-
