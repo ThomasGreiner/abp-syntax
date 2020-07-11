@@ -12,7 +12,7 @@ patterns:
   
   - name: abp.comment
     comment: Comment
-    begin: '^\s*\!\s*([a-zA-Z0-9\-_]*)(\s*:\s*(.*))?'
+    begin: '^\s*\!\s*([a-zA-Z0-9\-_ ]*)(\s*:\s*(.*))?'
     beginCaptures:
       '1': {name: abp.comment.key}
       '3': {name: abp.comment.value}
