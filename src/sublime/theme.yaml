@@ -5,7 +5,8 @@ uuid: f60e438f-bffb-4d65-8f6c-9406323a2eb0
 
 settings:
   - settings:
-      lineHighlight: '#000A'
+      background: '#1A1B1B'
+      selection: '#2E3B3B'
   
   - scope: meta.abp.header
     settings:
