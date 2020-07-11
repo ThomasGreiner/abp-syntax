@@ -18,6 +18,14 @@ patterns:
       '3': {name: abp.comment.value}
     end: \s*$
   
+  - name: abp.snippet
+    begin: '^(.*)(#\$#)(.*)'
+    beginCaptures:
+      '1': {name: abp.options.snippet}
+      '2': {name: abp.separator.snippet}
+      '3': {name: abp.call.snippet}
+    end: \s*$
+  
   - name: abp.elemhide.exception
     begin: '^(.*)(#@#)(.*)'
     beginCaptures:

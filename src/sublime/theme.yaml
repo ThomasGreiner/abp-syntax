@@ -18,6 +18,10 @@ settings:
     settings:
       foreground: '#555'
   
+  - scope: abp.call
+    settings:
+      foreground: '#FF7'
+  
   - scope: abp.options
     settings:
       foreground: '#77F'

@@ -18,3 +18,7 @@ www.example.com#@#body
 ! Extended hiding filters
 #?#:-abp-has(body)
 example.com#?#:-abp-has(body)
+
+! Snippet filters
+#$#foo
+example.com#$#foo
