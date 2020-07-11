@@ -27,7 +27,7 @@ patterns:
     end: \s*$
   
   - name: abp.elemhide.default
-    begin: '^(.*)(##)(.*)'
+    begin: '^([^#]*)(##)(.*)'
     beginCaptures:
       '1': {name: abp.options.elemhide.default}
       '2': {name: abp.separator.elemhide.default}
