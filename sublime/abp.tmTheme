@@ -10,7 +10,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#1a1b1b</string>
+				<string>#2F3030</string>
 				<key>caret</key>
 				<string>#F8F8F0</string>
 				<key>foreground</key>
@@ -20,7 +20,7 @@
 				<key>lineHighlight</key>
 				<string>#424C57</string>
 				<key>selection</key>
-				<string>#2e3b3b</string>
+				<string>#161A1F</string>
 				<key>findHighlight</key>
 				<string>#FFE792</string>
 				<key>findHighlightForeground</key>
@@ -351,8 +351,10 @@
 <dict>
 <key>settings</key>
 <dict>
-<key>lineHighlight</key>
-<string>#000A</string>
+<key>background</key>
+<string>#1A1B1B</string>
+<key>selection</key>
+<string>#2E3B3B</string>
 </dict>
 </dict>
 <dict>
@@ -382,6 +384,15 @@
 <dict>
 <key>foreground</key>
 <string>#555</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>abp.call</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#FF7</string>
 </dict>
 </dict>
 <dict>
