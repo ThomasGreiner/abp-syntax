@@ -26,6 +26,14 @@ patterns:
       '3': {name: abp.selector.elemhide.exception}
     end: \s*$
   
+  - name: abp.elemhide.extended
+    begin: '^(.*)(#\?#)(.*)'
+    beginCaptures:
+      '1': {name: abp.options.elemhide.extended}
+      '2': {name: abp.separator.elemhide.extended}
+      '3': {name: abp.selector.elemhide.extended}
+    end: \s*$
+  
   - name: abp.elemhide.default
     begin: '^([^#]*)(##)(.*)'
     beginCaptures:

@@ -14,3 +14,7 @@ $third-party
 example.com,~www2.example.com##body
 #@#body
 www.example.com#@#body
+
+! Extended hiding filters
+#?#:-abp-has(body)
+example.com#?#:-abp-has(body)
